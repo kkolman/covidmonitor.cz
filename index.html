@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
+<script src="covid.js"></script>
+
+
+Zdroj dat:
+<ul>
+	<li>
+		Ministerstvo zdravotnictví ČR: <a href="https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19">https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19</a>
+	</li>
+	<li>COVID-19: Přehled úmrtí dle hlášení krajských hygienických stanic - <a href="https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/umrti.csv">https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/umrti.csv</a>
+	</li>
+</ul>
+
+<h4>Denní počet úmrtí (4-denní klouzavý průměr)</h4>
+<div id="daily_deaths"></div>
+
+<h4>Úmrtí/věk</h4>
+<div id="daily_deaths_age_histogram" width=600 height=400></div>
+
+<h4>Průměrný věk úmrtí</h4>
+<div id="daily_deaths_age_average" width=600 height=400></div>
+
+<h4>Denní počet úmrtí 85+ (4-denní klouzavý průměr)</h4>
+<div id="daily_deaths_85"></div>
+
+<h4>Denní počet úmrtí 75-85 (4-denní klouzavý průměr)</h4>
+<div id="daily_deaths_75"></div>
+
+<h4>Denní počet úmrtí 65-75 (4-denní klouzavý průměr)</h4>
+<div id="daily_deaths_65"></div>
+
+<h4>Denní počet úmrtí 60-65 (4-denní klouzavý průměr)</h4>
+<div id="daily_deaths_60"></div>
+
+<h4>Denní počet úmrtí 55-60 (4-denní klouzavý průměr)</h4>
+<div id="daily_deaths_55"></div>
+
+<h4>Denní počet úmrtí <55 (4-denní klouzavý průměr)</h4>
+<div id="daily_deaths_55_less"></div>
+
+<h4>Zdroje</h4>
+<ul>
+	<li><a href="https://observablehq.com/@d3/hexbin">https://observablehq.com/@d3/hexbin</a></li>
+	<li><a href="https://observablehq.com/@d3/moving-average">https://observablehq.com/@d3/moving-average</a></li>
+</ul>
+
